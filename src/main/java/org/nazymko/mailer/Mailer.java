@@ -14,7 +14,7 @@ import javax.ws.rs.core.MediaType;
  */
 @Path("mailer")
 public class Mailer {
-    private Session session = GmailService.getInstance().session(new UserImpl("", ""));
+    private Session session = GmailService.getInstance().session(new UserImpl("nazymko.patronus@gmail.com", "firepatronus"));
 
     @GET
     @Path("test")
